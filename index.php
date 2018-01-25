@@ -11,18 +11,33 @@
       <title>OPCL</title>
     </head>
     <body>
-    <!-- add button -->
-    <form action ="upload.php" method = "POST" enctype="multipart/form-data">
+    <!-- add button     #https:www.youtube.comwatchv=JaRq73y5MJk -->
+    
     <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
-        <a class="btn-floating btn-large red">
-          <i class="large material-icons">add</i>
-          <input type ="file" name="file" >
+    <form action ="upload.php" method = "POST" enctype="multipart/form-data">
+
+        <a class="waves-effect btn-floating btn-large red file-field input-field">
+        <input type ="file" name="file"> <i class="large material-icons">add</i></input>
+    
+          
+          
         </a>
+    
+
+        
+<!-- <form action="upload.php" method="post" enctype="multipart/form-data">
+    Select image to upload:
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="Upload Image" name="submit">
+</form> -->
+
         <ul>
             <li><a class="btn-floating yellow darken-1"><i class="material-icons">delete</i></a></li>
+            <li><button class="btn-floating green darken-1" type="submit" name="submit"><i class="material-icons">check</i></button></li>
         </ul>
+        </form>
       </div>
-      </form>
+      
       <nav>
           <div class="nav-wrapper blue">
               <ul id="slide-out" class="side-nav">
@@ -72,7 +87,7 @@
       <div class ="col s9">
       <script type="text/javascript" src="js/materialize.min.js"></script>
       </div>
-      <h1>Lorem Ipsum</h1>
+      <h1>Lorem Ipsun</h1>
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
       <script>
