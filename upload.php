@@ -6,6 +6,7 @@ if(isset($_POST['submit'])){
     $fileTmpName = $file['tmp_name'];
     $fileSize = $file['size'];
     $fileError = $file['error'];
+    $message;
 
     $fileExt = explode('.',$fileName);
     $fileActualExt = strtolower(end($fileExt));
@@ -20,17 +21,23 @@ if(isset($_POST['submit'])){
                 $fileNameNew = uniqid('', true).".".$fileActualExt;
                 $fileDestination = 'img/'. $fileNameNew;
             move_uploaded_file($fileTmpName, $fileDestination);
-            header("Location: index.php?uploadsuccess")
-            } else{
-                echo "File too large";
+            header("Location: index.php?uploadsuccess");
+            }
+             else{
+                header( "refresh:0.5; url=index.php" );
+                  echo "<script type='text/javascript'>alert('File too large');</script>";
 
             }
         } else{
-            echo "Error uploading!";
+            header( "refresh:0.5; url=index.php" );
+            echo "<script type='text/javascript'>alert('Error uploading; Rederecting');</script>";
         }
 
     } else{
-        echo "You cannot upload files of this type!";
+         header( "refresh:0.5; url=index.php" );
+         echo "<script type='text/javascript'>alert('Invalid file type');</script>";
+         
+
     }
 
 }

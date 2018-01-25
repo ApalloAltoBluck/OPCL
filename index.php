@@ -12,32 +12,18 @@
     </head>
     <body>
     <!-- add button     #https:www.youtube.comwatchv=JaRq73y5MJk -->
-    
     <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
     <form action ="upload.php" method = "POST" enctype="multipart/form-data">
-
         <a class="waves-effect btn-floating btn-large red file-field input-field">
         <input type ="file" name="file"> <i class="large material-icons">add</i></input>
-    
-          
-          
         </a>
-    
-
-        
-<!-- <form action="upload.php" method="post" enctype="multipart/form-data">
-    Select image to upload:
-    <input type="file" name="fileToUpload" id="fileToUpload">
-    <input type="submit" value="Upload Image" name="submit">
-</form> -->
-
         <ul>
-            <li><a class="btn-floating yellow darken-1"><i class="material-icons">delete</i></a></li>
-            <li><button class="btn-floating green darken-1" type="submit" name="submit"><i class="material-icons">check</i></button></li>
+            <li><a class="btn-floating yellow darken-1"  ><i class="material-icons">delete</i></a></li>
+            <li><button class="btn-floating green darken-1" type="submit" name="submit" ><i class="material-icons">check</i></button></li>
         </ul>
         </form>
       </div>
-      
+    
       <nav>
           <div class="nav-wrapper blue">
               <ul id="slide-out" class="side-nav">
