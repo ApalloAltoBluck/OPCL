@@ -13,8 +13,20 @@
 </head>
 
 <body>
-<script></script>
-    <!-- add button     #https:www.youtube.comwatchv=JaRq73y5MJk -->
+<script>
+  function myFunction(){
+    var xr = new XMLHttpRequest();
+    var url = "saveNewText.php";
+    var text = document.getElementById("myDiv").innerHTML;
+    var vars = "newText="+text;
+    
+    xr.open("POST", url, true);
+    xr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xr.send(vars);
+}
+  
+</script> 
+   <!-- add button     #https:www.youtube.comwatchv=JaRq73y5MJk -->
     <div class="fixed-action-btn" style="bottom: 45px; right: 24px;">
         <form action="upload.php" method="POST" enctype="multipart/form-data">
             <a class="waves-effect btn-floating btn-large red file-field input-field">
@@ -57,15 +69,15 @@
             <ul id="nav-mobile" class="right hide-on-med-and-down">
             <div class="filter">
             
-            <button data-name='*' class="btn btn-primary">All</button>
-            <button data-name='.Nepenthes' class="btn btn-primary">Nepenthes</button>
-            <button data-name='.Heliamphora' class="btn btn-primary">Heliamphora</button>
-            <button data-name='*' class="btn btn-primary">Drosera</button>
-            <button data-name='*' class="btn btn-primary">Dionaea</button>
-            <button data-name='*' class="btn btn-primary">Cephalotus</button>
-            <button data-name='*' class="btn btn-primary">Sarracenia</button>
-            <button data-name='*' class="btn btn-primary">Pinguicula</button>
-            <button data-name='*' class="btn btn-primary">Utricularia</button>
+            <button data-name='*' class="btn btn-primary #80cbc4 teal lighten-3 " >All</button>
+            <button data-name='.Nepenthes' class="btn btn-primary #80cbc4 teal lighten-3">Nepenthes</button>
+            <button data-name='.Heliamphora' class="btn btn-primary #80cbc4 teal lighten-3">Heliamphora</button>
+            <button data-name='*' class="btn btn-primary #80cbc4 teal lighten-3">Drosera</button>
+            <button data-name='*' class="btn btn-primary #80cbc4 teal lighten-3">Dionaea</button>
+            <button data-name='*' class="btn btn-primary #80cbc4 teal lighten-3">Cephalotus</button>
+            <button data-name='*' class="btn btn-primary #80cbc4 teal lighten-3">Sarracenia</button>
+            <button data-name='*' class="btn btn-primary #80cbc4 teal lighten-3">Pinguicula</button>
+            <button data-name='*' class="btn btn-primary #80cbc4 teal lighten-3">Utricularia</button>
                 <div class="grid">
 
                 
@@ -115,11 +127,13 @@
                 <div class="card-reveal">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator"  src="img/qm.png">
+                            <img class="activator"  src="img/lowii.jpg">
                         </div>
                         <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">Nepenthes Lowii<i class="material-icons right">more_vert</i></span>
+                            <span class="card-title activator grey-text text-darken-4"><div id="myDiv" contenteditable="true" onblur="myFunction()"><?php include("myText.txt");?></div> <i class="material-icons right">more_vert</i></span>
                             <p><a href="#">This is a link</a></p>
+                          
+
                         </div>
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
@@ -134,7 +148,7 @@
                 <div class="card-reveal">
                     <div class="card">
                         <div class="card-image waves-effect waves-block waves-light">
-                            <img class="activator"  src="img/qm.png">
+                            <img class="activator"  src="img/minor.jpg">
                         </div>
                         <div class="card-content">
                             <span class="card-title activator grey-text text-darken-4">Heliamphora Minor<i class="material-icons right">more_vert</i></span>
