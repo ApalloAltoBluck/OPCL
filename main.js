@@ -15,14 +15,3 @@ $(".button-collapse").sideNav();
       });
   })
 
-  function myFunction(){
-    var xr = new XMLHttpRequest();
-    var url = "saveNewText.php";
-    var text = document.getElementById("myDiv").innerHTML;
-    var vars = "newText="+text;
-    
-    xr.open("POST", url, true);
-    xr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    xr.send(vars);
-}
-  
