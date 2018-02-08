@@ -17,10 +17,10 @@
 
   <div class="row">
       <div class="col s6">
-      <style>
-      
 
-      </style>
+    <img width=1000px; height=960px; src="signupgradient.png" >
+
+  
       
       </div>
       
