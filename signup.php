@@ -29,12 +29,17 @@
       
         <h1 class="logleft">Sign Up</h1>
     
+ 
+
+
+      <div class="signupform">
         <div class="input-field col s6 alignform">
-          <input width=400px; height=40px; placeholder="First Name" id="first_name" type="text" class="validate">
-          <label for="first_name">First Name</label>
-    </div>
+          <input placeholder="First Name" id="first_name" type="text" class="validate" style="width: 300px;">
+          <label for="first_name" style="width: 300px;">First Name</label>
 
-
+        
+        </div>
+      </div>
 
 
    <!-- Scripts !-->
