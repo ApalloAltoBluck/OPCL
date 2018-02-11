@@ -27,46 +27,20 @@
 
       </div>
       
-        <h1 class="logleft">Sign Up</h1>
     
  
-
-
       <div class="signupform">
-        <div class="input-field col s6 alignform">
-          <input placeholder="First Name" id="first_name" type="text" class="validate" style="width: 300px;">
-          <label for="first_name" style="width: 300px;">First Name</label>
-          
+      <font size="13">Sign Up</font>
+            <form class = "signup-form" action="includes/signup.inc.php" method="POST">
+            <input type="text" name="first" placeholder="Firstname">
+            <link rel="stylesheet" href="style.css">
+            <input type="text" name="last" placeholder="Lastname">
+            <input type="text" name="email" placeholder="E-mail">
+            <input type="text" name="uid" placeholder="Username">
+            <input type="password" name="pwd" placeholder="Password">
+            <button type ="submit" name ="submit" class="waves-effect waves-light btn">Sign up</button>
+        </form>
         </div>
-      </div>
-
-      <div class="signupform">
-        <div class="input-field col s6 alignform">
-          <input placeholder="Last Name" id="first_name" type="text" class="validate" style="width: 300px;">
-          <label for="last_name" style="width: 300px; ">Last Name</label>
-        </div>
-      </div>
-      <div class="signupform">
-        <div class="input-field col s12">
-          <input id="Username" type="password" class="validate">
-          <label for="password">Username</label>
-        </div>
-      </div>
-      <div class="signupform">
-        <div class="input-field col s12">
-          <input id="email" type="email" class="validate">
-          <label for="email">Email</label>
-        </div>
-      </div>
-      <div class="signupform">
-        <div class="input-field col s12">
-          <input id="password" type="password" class="validate">
-          <label for="password">Password</label>
-        </div>
-      </div>
-      
-      
-
 
    <!-- Scripts !-->
    <link rel="stylesheet" href="style.css">
