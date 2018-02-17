@@ -12,7 +12,7 @@
     <title>OCPL</title>
 </head>
 
-<body>
+<body   >
 <script>
   function myFunction(){
     var xr = new XMLHttpRequest();
@@ -47,19 +47,24 @@
                 <nav>
                     <div class="nav-wrapper">
                         <form>
-                            <div class="input-field bluexx`">
+                            <div class="input-field bluexx`">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
                                 
-                                <form action = "includes/login.inc.php" method = "POST">
-                                <input type = "text" name= "uid" placeholder="Username/e-mail">
-                                <input type = "password" name= "pwd" placeholder="password">
-                                <button class="btn btn-primary #80cbc4 teal lighten-3" type = "submit" name  = "submit">Login</button>
+                            <form action = "includes/login.inc.php" method = "POST">
+                                <input style=" color:#000000"  type = "text" name= "uid" placeholder="Username/e-mail">
+                                <input style=" color:#000000" type = "password" name= "pwd" placeholder="password">
+                                <button class="btn btn-primary #80cbc4 teal lighten-3" type = "submit" name  = "submit" >Login</button>
                             </form>
-                            <button class = "btn btn-primary #80cbc4 teal lighten-3" href="signup.php">Sign up</button>
-                                <i class="material-icons">close</i>
+
+
                             </div>
                         </form>
+
                     </div>
                 </nav>
+                <br>
+                <br>
+
+                <button class = "btn btn-primary #80cbc4 teal lighten-3" href="signup.php">Sign up</button>
                
             </ul>
 
@@ -86,9 +91,6 @@ if (isset($_SESSION['u_id'])){
 
 
 
-
-
-
     
 <div class="grid">
 <div class="Container">
@@ -105,6 +107,7 @@ if (isset($_SESSION['u_id'])){
                           
 
                         </div>
+                        
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
                             <p>Here is some more information about this product that is only revealed once clicked on.</p>
@@ -124,6 +127,7 @@ if (isset($_SESSION['u_id'])){
                             <span class="card-title activator grey-text text-darken-4">Heliamphora Minor<i class="material-icons right">more_vert</i></span>
                             <p><a href="#">This is a link</a></p>
                         </div>
+                        
                         <div class="card-reveal">
                             <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
                             <p>Here is some more information about this product that is only revealed once clicked on.</p>

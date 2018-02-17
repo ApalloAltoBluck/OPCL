@@ -10,7 +10,7 @@
             <link rel="stylesheet" href="style.css">
             <input type="text" name="last" placeholder="Lastname">
             <input type="text" name="email" placeholder="E-mail">
-            <input type="text" name="uid" placeholder="Username">
+            <input type="text" namex="uid" placeholder="Username">
             <input type="password" name="pwd" placeholder="Password">
             <button type ="submit" name ="submit">Sign up</button>
         </form>
